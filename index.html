@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============================================================
+       TITRE DE L'ONGLET — Changez ce texte par le nom de votre site
+       ============================================================ -->
+    <title>Mon Site</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ══════════════════════════════════════════════════
+       NAVIGATION
+       ══════════════════════════════════════════════════ -->
+    <nav>
+      <!-- ============================================================
+         LOGO — Remplacez "Mon Site" par le nom de votre site
+         ============================================================ -->
+      <a href="#accueil" class="nav-logo">Youssef El Maazouzi</a>
+
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <!-- ============================================================
+           LIENS DE NAVIGATION — Modifiez les textes et href si besoin
+           ============================================================ -->
+        <li><a href="#accueil" onclick="closeMenu()">Accueil</a></li>
+        <li><a href="#apropos" onclick="closeMenu()">À propos</a></li>
+        <li><a href="#videos" onclick="closeMenu()">Vidéos</a></li>
+        <li><a href="#bilan" onclick="closeMenu()">Bilan</a></li>
+      </ul>
+    </nav>
+
+    <!-- ══════════════════════════════════════════════════
+       SECTION HÉRO — Accueil
+       ══════════════════════════════════════════════════ -->
+    <section id="accueil">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+
+      <div class="hero-content">
+        <!-- ============================================================
+           BADGE HÉRO — Remplacez ce texte (ex: "Nouveau · Été 2025")
+           ============================================================ -->
+        <span class="hero-badge">Bienvenue sur mon site</span>
+
+        <!-- ============================================================
+           TITRE PRINCIPAL — Modifiez le titre et la partie en italique
+           ============================================================ -->
+        <h1>Activité<br /><em>Autonome de 3h00</em></h1>
+
+        <!-- ============================================================
+           SOUS-TITRE HÉRO — Décrivez votre site en 1-2 phrases
+           ============================================================ -->
+        <p class="hero-sub">
+          Dans cette page, vous allez découvrir mon activité de soccer que j'ai
+          organisé en 2 séances de 2h et de 1h
+        </p>
+
+        <!-- ============================================================
+           BOUTON D'APPEL À L'ACTION — Modifiez le texte et le href
+           ============================================================ -->
+        <a href="#videos" class="btn btn-primary">Voir les vidéos</a>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+       SECTION À PROPOS
+       ══════════════════════════════════════════════════ -->
+    <section id="apropos">
+      <div class="section-inner">
+        <div class="apropos-grid">
+          <div class="apropos-text">
+            <p class="section-label">À propos</p>
+
+            <!-- ============================================================
+               TITRE À PROPOS — Modifiez ce titre
+               ============================================================ -->
+            <h2>Qui suis-je ?</h2>
+            <div class="divider"></div>
+
+            <!-- ============================================================
+               TEXTE À PROPOS (paragraphe 1) — Écrivez votre présentation
+               ============================================================ -->
+            <p>
+              Je m'appelle Youssef El Maazouzi, étudiant au Collège Montmorency
+              et joueur de soccer dans une ligue compétitive au poste
+              d'attaquant. Le soccer est ma passion — c'est un sport que je
+              pratique avec sérieux depuis plusieurs années.
+            </p>
+
+            <!-- ============================================================
+               TEXTE À PROPOS (paragraphe 2) — Suite de votre présentation
+               ============================================================ -->
+            <p>
+              Ce site présente mon activité autonome de trois heures réalisée
+              dans le cadre du cours 1093VOMO. J'ai organisé deux séances
+              d'entraînement extérieur au Parc Laval-Ouest pour me préparer
+              techniquement avant le début de ma saison d'été : passes, centres,
+              coups de pied arrêtés et tirs de pénalité, avec un ami gardien de
+              niveau compétitif AA.
+            </p>
+          </div>
+
+          <img
+            src="/images/self.jpg"
+            alt="Photo de présentation"
+            style="width: 100%; border-radius: 14px; object-fit: cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+       SECTION VIDÉOS
+       ══════════════════════════════════════════════════ -->
+    <section id="videos">
+      <div class="section-inner">
+        <p class="section-label">Vidéos</p>
+
+        <!-- ============================================================
+           TITRE SECTION VIDÉOS — Modifiez ce titre
+           ============================================================ -->
+        <h2>Quelques séquences vidéos lors de l'entraînement</h2>
+        <div class="divider"></div>
+
+        <div class="videos-grid">
+          <!-- ── Vidéo 1 ── -->
+          <div class="video-card">
+            <!-- ============================================================
+               VIDÉO 1 — Remplacez le contenu de cette div par un <iframe>
+               YouTube / Vimeo ou une balise <video> :
+
+               Exemple YouTube :
+               <iframe width="100%" height="100%"
+                 src="https://www.youtube.com/embed/VOTRE_ID_VIDEO"
+                 frameborder="0" allowfullscreen></iframe>
+
+               Exemple vidéo locale :
+               <video width="100%" controls>
+                 <source src="video1.mp4" type="video/mp4">
+               </video>
+               ============================================================ -->
+            <div class="video-embed">
+              <video width="100%" controls muted>
+                <source src="/videos/tirDroit.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-info">
+              <!-- ============================================================
+                 TITRE VIDÉO 1 — Modifiez ce titre
+                 ============================================================ -->
+              <h3>Coup de pied arrêté - Tir du pied droit</h3>
+            </div>
+          </div>
+
+          <!-- ── Vidéo 2 ── -->
+          <div class="video-card">
+            <!-- ============================================================
+               VIDÉO 2 — Même principe que la vidéo 1
+               ============================================================ -->
+            <div class="video-embed">
+              <video width="100%" controls muted>
+                <source src="/videos/tirG.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-info">
+              <!-- ============================================================
+                 TITRE VIDÉO 2 — Modifiez ce titre
+                 ============================================================ -->
+              <h3>Coup de pied arrêté - Tir du pied gauche</h3>
+            </div>
+          </div>
+
+          <!-- ── Vidéo 3 ── -->
+          <div class="video-card">
+            <!-- ============================================================
+               VIDÉO 3 — Même principe que les vidéos précédentes
+               Vous pouvez dupliquer ce bloc pour ajouter plus de vidéos
+               ============================================================ -->
+            <div class="video-embed">
+              <div class="play-icon"></div>
+              <span>Vidéo 3 — votre embed ici</span>
+            </div>
+            <div class="video-info">
+              <!-- ============================================================
+                 TITRE VIDÉO 3 — Modifiez ce titre
+                 ============================================================ -->
+              <h3>Titre de la vidéo 3</h3>
+              <!-- ============================================================
+                 DESCRIPTION VIDÉO 3 — Modifiez cette description
+                 ============================================================ -->
+              <p>
+                Courte description de cette vidéo. Expliquez le sujet ou le
+                contenu abordé.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /videos-grid -->
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+       SECTION BILAN / TEXTES
+       ══════════════════════════════════════════════════ -->
+    <section id="bilan">
+      <div class="section-inner">
+        <p class="section-label">Bilan</p>
+
+        <!-- ============================================================
+           TITRE SECTION BILAN — Modifiez ce titre
+           ============================================================ -->
+        <h2>Mon bilan</h2>
+        <div class="divider"></div>
+
+        <div class="articles-grid">
+          <!-- ── Article 1 ── -->
+          <div class="article-card">
+            <!-- ============================================================
+               TAG ARTICLE 1 — Remplacez "Catégorie" par votre tag
+               ============================================================ -->
+            <span class="article-tag">Catégorie</span>
+
+            <!-- ============================================================
+               TITRE ARTICLE 1 — Modifiez ce titre
+               ============================================================ -->
+            <h3>Titre de votre premier article</h3>
+
+            <!-- ============================================================
+               TEXTE ARTICLE 1 — Écrivez votre contenu ici
+               ============================================================ -->
+            <p>
+              Votre texte d'article vient ici. Vous pouvez écrire un résumé, une
+              introduction, ou l'article complet selon vos préférences.
+            </p>
+
+            <!-- ============================================================
+               LIEN ARTICLE 1 — Mettez un href vers la page ou l'ancre
+               voulue, ou retirez ce lien si non nécessaire
+               ============================================================ -->
+            <a href="#" class="read-more">Lire la suite</a>
+          </div>
+
+          <!-- ── Article 2 ── -->
+          <div class="article-card">
+            <!-- ============================================================
+               TAG ARTICLE 2 — Remplacez "Catégorie"
+               ============================================================ -->
+            <span class="article-tag">Catégorie</span>
+
+            <!-- ============================================================
+               TITRE ARTICLE 2 — Modifiez ce titre
+               ============================================================ -->
+            <h3>Titre de votre deuxième article</h3>
+
+            <!-- ============================================================
+               TEXTE ARTICLE 2 — Écrivez votre contenu ici
+               ============================================================ -->
+            <p>
+              Votre texte d'article vient ici. Décrivez votre sujet de façon
+              claire et engageante pour vos lecteurs.
+            </p>
+
+            <a href="#" class="read-more">Lire la suite</a>
+          </div>
+
+          <!-- ── Article 3 ── -->
+          <div class="article-card">
+            <!-- ============================================================
+               TAG ARTICLE 3 — Remplacez "Catégorie"
+               ============================================================ -->
+            <span class="article-tag">Catégorie</span>
+
+            <!-- ============================================================
+               TITRE ARTICLE 3 — Modifiez ce titre
+               ============================================================ -->
+            <h3>Titre de votre troisième article</h3>
+
+            <!-- ============================================================
+               TEXTE ARTICLE 3 — Écrivez votre contenu ici
+               Dupliquez tout le bloc .article-card pour ajouter un article
+               ============================================================ -->
+            <p>
+              Votre texte d'article vient ici. Utilisez ce bloc autant de fois
+              que nécessaire.
+            </p>
+
+            <a href="#" class="read-more">Lire la suite</a>
+          </div>
+        </div>
+        <!-- /articles-grid -->
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════════════ -->
+    <footer>
+      <!-- ============================================================
+         COPYRIGHT — Remplacez "Mon Site" et l'année si besoin
+         ============================================================ -->
+      <p>© 2025 Mon Site — Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
