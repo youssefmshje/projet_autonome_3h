@@ -3,9 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ============================================================
-       TITRE DE L'ONGLET — Changez ce texte par le nom de votre site
-       ============================================================ -->
     <title>Act-Auto</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,13 +15,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- ══════════════════════════════════════════════════
-       NAVIGATION
-       ══════════════════════════════════════════════════ -->
     <nav>
-      <!-- ============================================================
-         LOGO — Remplacez "Mon Site" par le nom de votre site
-         ============================================================ -->
       <a href="#accueil" class="nav-logo">Youssef El Maazouzi</a>
 
       <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
@@ -32,9 +23,6 @@
       </button>
 
       <ul class="nav-links" id="navLinks">
-        <!-- ============================================================
-           LIENS DE NAVIGATION — Modifiez les textes et href si besoin
-           ============================================================ -->
         <li><a href="#accueil" onclick="closeMenu()">Accueil</a></li>
         <li><a href="#apropos" onclick="closeMenu()">Déroulement</a></li>
         <li><a href="#videos" onclick="closeMenu()">Vidéos</a></li>
@@ -42,57 +30,31 @@
       </ul>
     </nav>
 
-    <!-- ══════════════════════════════════════════════════
-       SECTION HÉRO — Accueil
-       ══════════════════════════════════════════════════ -->
     <section id="accueil">
       <div class="orb orb-1"></div>
       <div class="orb orb-2"></div>
 
       <div class="hero-content">
-        <!-- ============================================================
-           BADGE HÉRO — Remplacez ce texte (ex: "Nouveau · Été 2025")
-           ============================================================ -->
         <span class="hero-badge">Bienvenue sur mon site</span>
 
-        <!-- ============================================================
-           TITRE PRINCIPAL — Modifiez le titre et la partie en italique
-           ============================================================ -->
         <h1>Activité<br /><em>Autonome de 3h00</em></h1>
 
-        <!-- ============================================================
-           SOUS-TITRE HÉRO — Décrivez votre site en 1-2 phrases
-           ============================================================ -->
         <p class="hero-sub">
           Dans cette page, vous allez découvrir mon activité de soccer que j'ai
-          organisé en 2 séances de 2h et de 1h
+          organisé en 2 séances.
         </p>
 
-        <!-- ============================================================
-           BOUTON D'APPEL À L'ACTION — Modifiez le texte et le href
-           ============================================================ -->
-        <a href="#videos" class="btn btn-primary">Voir les vidéos</a>
+        <a href="#apropos" class="btn btn-primary">Voir le déroulement</a>
       </div>
     </section>
 
-    <!-- ══════════════════════════════════════════════════
-       SECTION À PROPOS
-       ══════════════════════════════════════════════════ -->
     <section id="apropos">
       <div class="section-inner">
         <div class="apropos-grid">
           <div class="apropos-text">
             <p class="section-label">Déroulement</p>
-
-            <!-- ============================================================
-               TITRE À PROPOS — Modifiez ce titre
-               ============================================================ -->
             <h2>Comment l'activité a été organisé ?</h2>
             <div class="divider"></div>
-
-            <!-- ============================================================
-               TEXTE À PROPOS (paragraphe 1) — Écrivez votre présentation
-               ============================================================ -->
             <p>
               Je m'appelle Youssef El Maazouzi, étudiant au Collège Montmorency
               et attaquant dans une ligue de soccer compétitive. Pour préparer
@@ -100,10 +62,6 @@
               deux séances d'entraînement extérieur au Parc Laval-Ouest avec un
               ami gardien de niveau AA.
             </p>
-
-            <!-- ============================================================
-               TEXTE À PROPOS (paragraphe 2) — Suite de votre présentation
-               ============================================================ -->
             <p>
               La première séance (17 avril, 2h00) portait sur les passes
               longues, les centres, les coups de pied arrêtés et les tirs de
@@ -124,125 +82,105 @@
       </div>
     </section>
 
-    <!-- ══════════════════════════════════════════════════
-       SECTION VIDÉOS
-       ══════════════════════════════════════════════════ -->
     <section id="videos">
       <div class="section-inner">
         <p class="section-label">Vidéos</p>
 
-        <!-- ============================================================
-           TITRE SECTION VIDÉOS — Modifiez ce titre
-           ============================================================ -->
         <h2>Quelques séquences vidéos lors de l'entraînement</h2>
         <div class="divider"></div>
 
         <div class="videos-grid">
           <!-- ── Vidéo 1 ── -->
           <div class="video-card">
-            <!-- ============================================================
-               VIDÉO 1 — Remplacez le contenu de cette div par un <iframe>
-               YouTube / Vimeo ou une balise <video> :
-
-               Exemple YouTube :
-               <iframe width="100%" height="100%"
-                 src="https://www.youtube.com/embed/VOTRE_ID_VIDEO"
-                 frameborder="0" allowfullscreen></iframe>
-
-               Exemple vidéo locale :
-               <video width="100%" controls>
-                 <source src="video1.mp4" type="video/mp4">
-               </video>
-               ============================================================ -->
             <div class="video-embed">
               <video width="100%" controls muted>
                 <source src="videos/tirDroit.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="video-info">
-              <!-- ============================================================
-                 TITRE VIDÉO 1 — Modifiez ce titre
-                 ============================================================ -->
               <h3>17 avril - Coup de pied arrêté - Tir du pied droit</h3>
             </div>
           </div>
 
-          <!-- ── Vidéo 2 ── -->
           <div class="video-card">
-            <!-- ============================================================
-               VIDÉO 2 — Même principe que la vidéo 1
-               ============================================================ -->
             <div class="video-embed">
               <video width="100%" controls muted>
                 <source src="videos/tirG.mp4" type="video/mp4" />
               </video>
             </div>
             <div class="video-info">
-              <!-- ============================================================
-                 TITRE VIDÉO 2 — Modifiez ce titre
-                 ============================================================ -->
               <h3>17 avril - Coup de pied arrêté - Tir du pied gauche</h3>
             </div>
           </div>
 
-          <!-- ── Vidéo 3 ── -->
           <div class="video-card">
-            <!-- ============================================================
-               VIDÉO 3 — Même principe que les vidéos précédentes
-               Vous pouvez dupliquer ce bloc pour ajouter plus de vidéos
-               ============================================================ -->
             <div class="video-embed">
-              <div class="play-icon"></div>
-              <span>Vidéo 3 — votre embed ici</span>
+              <video width="100%" controls muted>
+                <source src="videos/penalty.mp4" type="video/mp4" />
+              </video>
             </div>
             <div class="video-info">
-              <!-- ============================================================
-                 TITRE VIDÉO 3 — Modifiez ce titre
-                 ============================================================ -->
-              <h3>Titre de la vidéo 3</h3>
-              <!-- ============================================================
-                 DESCRIPTION VIDÉO 3 — Modifiez cette description
-                 ============================================================ -->
-              <p>
-                Courte description de cette vidéo. Expliquez le sujet ou le
-                contenu abordé.
-              </p>
+              <h3>17 avril - Penalty</h3>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-embed">
+              <video width="100%" controls muted>
+                <source src="videos/crossyo.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-info">
+              <h3>24 avril - Toucher la barre - Youssef</h3>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-embed">
+              <video width="100%" controls muted>
+                <source src="videos/crossjo_JPHxO4Nc.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-info">
+              <h3>24 avril - Toucher la barre - Jenathan</h3>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-embed">
+              <video width="100%" controls muted>
+                <source src="videos/passe.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-info">
+              <h3>24 avril - Passe Courte distance</h3>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-embed">
+              <video width="100%" controls muted>
+                <source src="videos/centre.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-info">
+              <h3>24 avril - Centre + finition</h3>
             </div>
           </div>
         </div>
-        <!-- /videos-grid -->
       </div>
     </section>
 
-    <!-- ══════════════════════════════════════════════════
-       SECTION BILAN / TEXTES
-       ══════════════════════════════════════════════════ -->
     <section id="bilan">
       <div class="section-inner">
         <p class="section-label">Bilan</p>
 
-        <!-- ============================================================
-           TITRE SECTION BILAN — Modifiez ce titre
-           ============================================================ -->
         <h2>Mon bilan</h2>
         <div class="divider"></div>
 
         <div class="articles-grid">
           <!-- ── Article 1 ── -->
           <div class="article-card">
-            <!-- ============================================================
-               TAG ARTICLE 1 — Remplacez "Catégorie" par votre tag
-               ============================================================ -->
             <span class="article-tag">Expérience</span>
 
-            <!-- ============================================================
-               TITRE ARTICLE 1 — Modifiez ce titre
-               ============================================================ -->
             <h3>Ce que j'ai appris</h3>
 
-            <!-- ============================================================
-               TEXTE ARTICLE 1 — Écrivez votre contenu ici
-               ============================================================ -->
             <p>
               Sur le plan organisationnel, cette activité m’a permis de
               planifier une séance d'entraînement de manière structurée. Cela
@@ -252,29 +190,13 @@
               exemple, j’ai pu prévoir le matériel, la date, la durée et surtout
               des exercices spécifiques correspondants au but de l’activité.
             </p>
-
-            <!-- ============================================================
-               LIEN ARTICLE 1 — Mettez un href vers la page ou l'ancre
-               voulue, ou retirez ce lien si non nécessaire
-               ============================================================ -->
-            <!-- <a href="#" class="read-more">Lire la suite</a> -->
           </div>
 
-          <!-- ── Article 2 ── -->
           <div class="article-card">
-            <!-- ============================================================
-               TAG ARTICLE 2 — Remplacez "Catégorie"
-               ============================================================ -->
             <span class="article-tag">+ & -</span>
 
-            <!-- ============================================================
-               TITRE ARTICLE 2 — Modifiez ce titre
-               ============================================================ -->
             <h3>Quelques points positifs et négatifs</h3>
 
-            <!-- ============================================================
-               TEXTE ARTICLE 2 — Écrivez votre contenu ici
-               ============================================================ -->
             <p>
               D'abord, un point fort que j’ai ressenti pendant l’activité était
               les conditions météo. Il faisait une bonne température, aux
@@ -290,22 +212,11 @@
             </p>
           </div>
 
-          <!-- ── Article 3 ── -->
           <div class="article-card">
-            <!-- ============================================================
-               TAG ARTICLE 3 — Remplacez "Catégorie"
-               ============================================================ -->
             <span class="article-tag">Améliorations</span>
 
-            <!-- ============================================================
-               TITRE ARTICLE 3 — Modifiez ce titre
-               ============================================================ -->
             <h3>Des améliorations possibles ?</h3>
 
-            <!-- ============================================================
-               TEXTE ARTICLE 3 — Écrivez votre contenu ici
-               Dupliquez tout le bloc .article-card pour ajouter un article
-               ============================================================ -->
             <p>
               Si je devais refaire cette activité, je ferais mieux de gérer
               l’intensité des tirs pour éviter une fatigue musculaire importante
@@ -322,20 +233,10 @@
             </p>
           </div>
           <div class="article-card">
-            <!-- ============================================================
-               TAG ARTICLE 3 — Remplacez "Catégorie"
-               ============================================================ -->
             <span class="article-tag">Condition physique</span>
 
-            <!-- ============================================================
-               TITRE ARTICLE 3 — Modifiez ce titre
-               ============================================================ -->
             <h3>Un lien avec ma conditon physique du test physique 1?</h3>
 
-            <!-- ============================================================
-               TEXTE ARTICLE 3 — Écrivez votre contenu ici
-               Dupliquez tout le bloc .article-card pour ajouter un article
-               ============================================================ -->
             <p>
               Suite à mon test physique 1, j'ai constaté que mes qualités
               techniques (coordination, touche de balle) étaient un point fort,
@@ -351,17 +252,9 @@
             </p>
           </div>
         </div>
-        <!-- /articles-grid -->
       </div>
     </section>
-
-    <!-- ══════════════════════════════════════════════════
-       FOOTER
-       ══════════════════════════════════════════════════ -->
     <footer>
-      <!-- ============================================================
-         COPYRIGHT — Remplacez "Mon Site" et l'année si besoin
-         ============================================================ -->
       <p>© 2026 Youssef El Maazouzi — Tous droits réservés</p>
     </footer>
 
